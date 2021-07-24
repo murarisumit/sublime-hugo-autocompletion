@@ -23,8 +23,11 @@ make run
 
 
 ### To get tags
-curl localhost:5050/tags
+`curl localhost:5050/tags`
 
 ### To get categories
-curl localhost:5050/categories
+`curl localhost:5050/categories`
+
+
+These json'd *tags* and *categories* are then used by sublime plugin for autocompletion.
 

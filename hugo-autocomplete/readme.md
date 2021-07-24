@@ -1,5 +1,5 @@
 Prereq:
-* It expects data from hugo for autocompletion. It gets data from `tags.html` and `categories.html` at root directory of generated static site.
+* It expects data from hugo for autocompletion. It gets data from `tags-list.html` and `categories-list.html` at root directory of generated static site.
 * Hugo server should be running, else it would not be able to fetch above data.
 
 

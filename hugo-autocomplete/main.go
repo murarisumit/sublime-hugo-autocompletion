@@ -5,8 +5,8 @@ import (
 	"net/http"
 )
 
-var TAGS_URL = "http://localhost:1313/tags-list.html"
-var CATEGORIES_URL = "http://localhost:1313/categories-list.html"
+var TAGS_URL = "http://localhost:1313/tlist.html"
+var CATEGORIES_URL = "http://localhost:1313/clist.html"
 
 func main() {
 	hugoCompleter := HugoCompleter{

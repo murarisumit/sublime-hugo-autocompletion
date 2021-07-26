@@ -1,6 +1,7 @@
 package main
 
 import (
+	"fmt"
 	"log"
 	"net/http"
 )
@@ -34,6 +35,21 @@ func main() {
 	})
 
 	// listen to port
-	http.ListenAndServe(":5050", nil)
 
+	addr := "localhost:5050"
+	log.Println("Listing on 5050 port.")
+	log.Println(banner(addr))
+	http.ListenAndServe(addr, nil)
+
+}
+
+func banner(addr string) string {
+	fetchTags := addr + "/tags"
+	fetchCategories := addr + "/categories"
+	banner := "\n=========Usage=============\n"
+	banner += fmt.Sprintf("Fetch Tags: %v \n", fetchTags)
+	banner += fmt.Sprintf("Fetch Categories: %v\n", fetchCategories)
+	banner += "=========================="
+
+	return banner
 }
